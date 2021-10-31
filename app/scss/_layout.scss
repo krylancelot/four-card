@@ -1,0 +1,62 @@
+body{
+
+}
+main{
+    display: flex;
+    flex-flow: column;
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.card-container{
+} 
+
+.card{
+    display: grid;
+    margin:2em 0;
+    padding: 2em;
+    text-align: left;
+    max-height: 40%;
+}
+
+.card-icon{
+    justify-self: right;
+    width: 4.35em;
+    margin-top: 3em;
+}
+
+footer{
+    text-align: center;
+    padding: 1em;
+}
+
+@media (min-width:60rem) {
+    main{
+        place-self: center;
+        margin:3em auto;
+    }
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
+    }
+    .mid-section{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .card-cyan,.card-blue{
+        align-self: center;
+    }
+
+   .title{
+       max-width: 50%;
+       margin: auto;
+       
+       p{
+           margin: 2em 0;
+       }
+   }
+}
